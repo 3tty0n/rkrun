@@ -40,7 +40,7 @@ def krun_done():
     c_krun_done()
 
 
-def kru_measure(mdata_idx):
+def krun_measure(mdata_idx):
     c_krun_measure(mdata_idx)
 
 
