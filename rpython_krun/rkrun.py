@@ -31,3 +31,22 @@ c_krun_get_core_cycles_double = rffi.llexternal('krun_get_core_cycles_double',
                                                 [rffi.INT, rffi.INT],
                                                 rffi.DOUBLE,
                                                 compilation_info=eci)
+
+def krun_init():
+    c_krun_init()
+
+
+def krun_done():
+    c_krun_done()
+
+
+def kru_measure(mdata_idx):
+    c_krun_measure(mdata_idx)
+
+
+def krun_get_wall_clock(mdata_idx):
+    return c_krun_get_wall_clock(mdata_idx)
+
+
+def krun_get_core_cycles_double(mdata_idx, core):
+    return c_krun_get_core_cycles_double(mdata_idx, core)
