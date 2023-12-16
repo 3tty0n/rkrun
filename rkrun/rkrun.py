@@ -22,7 +22,7 @@ c_krun_measure = rffi.llexternal('krun_measure',
                                  lltype.Void,
                                  compilation_info=eci)
 
-c_krun_get_wall_clock = rffi.llexternal('krun_get_wall_clock',
+c_krun_get_wall_clock = rffi.llexternal('krun_get_wallclock',
                                          [rffi.INT],
                                          rffi.DOUBLE,
                                          compilation_info=eci)
