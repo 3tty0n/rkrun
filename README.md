@@ -9,7 +9,7 @@ RPython extention for [krun](https://github.com/softdevteam/krun).
 ## Usage
 
 ```shell
-rpython -Ojit targetkruntest.py
+rpython -O2 rpython_krun/targetkruntest.py
 
 LD_LIBRARY_PATH=/path/to/libkrun ./targetkruntest-c
 ```
